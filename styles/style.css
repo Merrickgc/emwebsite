@@ -1,0 +1,95 @@
+/*Color barra superior*/
+.navbar-top {
+    background-color: #5409DA;
+}
+/*Color barra secundaria*/
+.navbar-bottom {
+    background-color: #4E71FF;
+}
+/*Borde de la barra de busqueda*/
+.search-bar {
+    border-radius: 1rem;
+}
+/*Propiedades de icono de carrito*/
+.icon-btn {
+    background: none;
+    border: none;
+    color: white;
+}
+/*Tamaño del logo*/
+.sp-logo {
+    height: 40px;
+}
+
+/* Propiedades de categoria iconos */
+
+.category-item {
+    width: 100px;
+    text-align: center;
+    margin: 0 10px;
+    flex-shrink: 0;
+}
+
+.category-icon {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px auto;
+}
+
+.category-icon img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.category-text {
+    font-size: 0.875rem;
+    color: #333;
+}
+/* Quita la linea del enlace*/
+a {
+    text-decoration: none;
+}
+/* Footer o pie de pagina */
+footer {
+    background-color: #5409DA;
+    color: #e9ecef;
+    padding: 3rem 1rem 1rem;
+}
+footer a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.footer-title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: #f8f9fa;
+}
+.social-icons a {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    color: #adb5bd;
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+    color: #0d6efd;
+}
+.footer-bottom {
+    border-top: 1px solid #2c2c2c;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: #868e96;
+    text-align: center;
+}
