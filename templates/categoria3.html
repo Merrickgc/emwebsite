@@ -1,235 +1,176 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- Bootstrap Framework -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-        <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
-        <!-- Stylesheet -->
-        <link rel="stylesheet" href="../styles/style.css">
-        <title>Emmanuel's Store</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Emmanuel's Store</title>
+		<link rel="stylesheet" href="../styles/style.css" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="icon" href="../sources/icon.png">
 	</head>
 	<body>
-
-        <!-- Top Navbar -->
-        <nav class="navbar navbar-top py-2">
-            <div class="container d-flex justify-content-between align-items-center p-2">
-                <a href="../index.html">
-                    <div class="d-flex align-items-center">
-                        <img src="../sources/supermarket_logo.avif" alt="sp" class="sp-logo me-2">
-                    </div>
-                </a>
-
-                <div class="flex-grow-1 mx-3">
-                <input type="text" class="form-control search-bar px-4" placeholder="Buscar">
-                </div>
-                <div class="d-flex align-items-center gap-3">
-                <button class="icon-btn"><i class="bi bi-heart fs-5"></i></button>
-                <button class="icon-btn"><i class="bi bi-person fs-5"></i> <span class="text-white">Mi cuenta</span></button>
-                <button class="icon-btn"><i class="bi bi-cart fs-5"></i></button>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Bottom Navbar -->
-        <nav class="navbar navbar-bottom py-2">
-            <div class="container d-flex justify-content-between align-items-center">
-                <div class="d-flex gap-4">
-                    <a href="#" class="text-white fw-semibold text-decoration-none">Ofertas</a>
-                    <a href="#" class="text-white fw-semibold text-decoration-none">Envíos</a>
-                    <a href="#" class="text-white fw-semibold text-decoration-none">Lo + nuevo</a>
-                    <a href="#" class="text-white fw-semibold text-decoration-none">Gift card</a>
-                    <a href="#" class="text-white fw-semibold text-decoration-none">Ayuda <i class="bi bi-chevron-down"></i></a>
-                </div>
-                <div class="d-flex gap-3 align-items-center">
-                    <a href="https://www.amazon.com/?&tag=googleglobalp-20&ref=pd_sl_7nnedyywlk_e&adgrpid=159651196451&hvpone=&hvptwo=&hvadid=675114638367&hvpos=&hvnetw=g&hvrand=7450668258980448716&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9069801&hvtargid=kwd-10573980&hydadcr=2246_13468515" class="text-white fw-semibold text-decoration-none">Cotizador Amazon</a>
-                </div>
-            </div>
-        </nav>
-        <!-- Titulo -->
-        <div class="container mt-3 pt-3">
-            <div class="row">
-                <div class="col text-center">
-                    <h3>Abarrotes</h3>
-                </div>
-            </div>
-        </div>
-        <!-- Productos -->
-        <div class="container">
-            <div class="row centrado">
-                <!-- Producto 1 -->
-                <div class="col">
-                    <div class="mt-5">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../sources/categoria3/1.webp" class="card-img-top" alt="Toallas Húmedas Huggies">
-                            <div class="card-body">
-                                <h5 class="card-title">Chicharrón Señorial Barbacoa</h5>
-                                <p class="card-text">Unidad...</p>
-                                <p class="text-muted">Patrocinado</p>
-                                <h5 class="card-price">Q9.50/h5>
-                                <button class="btn btn-primary">+ Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Producto 2 -->
-                <div class="col">
-                    <div class="container mt-5">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../sources/categoria3/2.webp" class="card-img-top" alt="Toallas Húmedas Huggies">
-                            <div class="card-body">
-                                <h5 class="card-title">Azúcar Morena los tulipanes</h5>
-                                <p class="card-text">4 Libras...</p>
-                                <p class="text-muted">Normal</p>
-                                <h5 class="card-price">17.35</h5>
-                                <button class="btn btn-primary">+ Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Producto 3 -->
-                <div class="col">
-                    <div class="container mt-5">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../sources/categoria3/3.webp" class="card-img-top" alt="Toallas Húmedas Huggies">
-                            <div class="card-body">
-                                <h5 class="card-title">Azúcar Fortificada Blanca Caña Real</h5>
-                                <p class="card-text">5.43 Libras...</p>
-                                <p class="text-muted">Normal</p>
-                                <h5 class="card-price">21.45</h5>
-                                <button class="btn btn-primary">+ Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Producto 4 -->
-                <div class="col">
-                    <div class="container mt-5">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../sources/categoria3/4.webp" class="card-img-top" alt="Toallas Húmedas Huggies">
-                            <div class="card-body">
-                                <h5 class="card-title">Maní japones marca Naú</h5>
-                                <p class="card-text">300 Gramos...</p>
-                                <p class="text-muted">Patrocinado</p>
-                                <h5 class="card-price">Q20.00</h5>
-                                <button class="btn btn-primary">+ Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Producto 5 -->
-                <div class="col">
-                    <div class="mt-5">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../sources/categoria3/5.webp" class="card-img-top" alt="Toallas Húmedas Huggies">
-                            <div class="card-body">
-                                <h5 class="card-title">Pasta larga Ina Espagueti</h5>
-                                <p class="card-text">200 gramos...</p>
-                                <p class="text-muted">Normal</p>
-                                <h5 class="card-price">Q4.15</h5>
-                                <button class="btn btn-primary">+ Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Producto 6 -->
-                <div class="col">
-                    <div class="container mt-5">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../sources/categoria3/6.webp" class="card-img-top" alt="Toallas Húmedas Huggies">
-                            <div class="card-body">
-                                <h5 class="card-title">Frijoles Ducal molido negro</h5>
-                                <p class="card-text">993 gramos...</p>
-                                <p class="text-muted">Normal</p>
-                                <h5 class="card-price">Q14.00</h5>
-                                <button class="btn btn-primary">+ Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Producto 7 -->
-                <div class="col">
-                    <div class="container mt-5">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../sources/categoria3/7.webp" class="card-img-top" alt="Toallas Húmedas Huggies">
-                            <div class="card-body">
-                                <h5 class="card-title">Quesifritos Señorial Snack</h5>
-                                <p class="card-text">100 gramos...</p>
-                                <p class="text-muted">Patrocinado</p>
-                                <h5 class="card-price">Q6.55</h5>
-                                <button class="btn btn-primary">+ Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Producto 8 -->
-                <div class="col">
-                    <div class="container mt-5">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../sources/categoria3/8.webp" class="card-img-top" alt="Toallas Húmedas Huggies">
-                            <div class="card-body">
-                                <h5 class="card-title">Arroz gallo dorado precocido</h5>
-                                <p class="card-text">400 gramos...</p>
-                                <p class="text-muted">Normal</p>
-                                <h5 class="card-price">Q7.80</h5>
-                                <button class="btn btn-primary">+ Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <!-- Footer -->
-        <footer>
-        <div class="container">
-            <div class="row gy-4">
-            <div class="col-12 col-md-4">
-                <h5 class="footer-title">Acerca de</h5>
-                <p>
-                Página creada como proyecto ....
-                </p>
-            </div>
-            <div class="col-6 col-md-2">
-                <h5 class="footer-title">Enlaces</h5>
-                <ul class="list-unstyled">
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Envios</a></li>
-                <li><a href="#">Lo + nuevo</a></li>
-                <li><a href="#">Gift card</a></li>
-                <li><a href="#">Ayuda</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md-3">
-                <h5 class="footer-title">Contacto</h5>
-                <ul class="list-unstyled">
-                <li><i class="bi bi-geo-alt-fill"></i> Guatemala, Guatemala</li>
-                <li><i class="bi bi-telephone-fill"></i> +502 6666-6666</li>
-                <li><i class="bi bi-envelope-fill"></i> info@emstore.com</li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-3">
-                <h5 class="footer-title">Siguenos</h5>
-                <div class="social-icons">
-                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                </div>
-            </div>
-            </div>
-            <div class="footer-bottom mt-4">
-            &copy; 2025 UMG. All rights reserved.
-            </div>
-        </div>
-        </footer>
-
-        <!-- JQuery Framework -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <!-- Owl Carousel JS Framework -->
-        <script src="../lib/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
-        <script src="../lib/bootstrap/js/bootstrap.js"></script>
-        <script src="../script/script.js"></script>
+		<!-- Top Navbar -->
+		<nav class="navbar-top">
+			<div class="navbar-container">
+				<a href="../index.html" class="logo-link">
+					<img src="../sources/supermarket_logo.avif" alt="sp" class="logo" />
+				</a>
+				<input type="text" class="search-bar" placeholder="Buscar" />
+				<div class="icon-group">
+					<button class="icon-btn"><i class="bi bi-heart"></i></button>
+					<a href="perfil.html">
+						<button class="icon-btn"><i class="bi bi-person"></i><span>Mi cuenta</span></button>
+					</a>
+					<a href="carrito.html">
+            			<button class="icon-btn"><i class="bi bi-cart"></i></button>
+          			</a>
+				</div>
+			</div>
+		</nav>
+		<!-- Bottom Navbar -->
+		<nav class="navbar-bottom">
+			<div class="bottom-links">
+				<a href="categoria1.html">Artículos para el Hogar</a>
+				<a href="categoria2.html">Limpieza</a>
+				<a href="categoria3.html">Abarrotes</a>
+				<a href="categoria4.html">Higiene y Belleza</a>
+			</div>
+			<a href="https://www.amazon.com" class="amazon-link">Cotizador Amazon</a>
+		</nav>
+		<!-- Título -->
+		<header class="header">
+			<h3>Abarrotes</h3>
+		</header>
+		<main class="product-grid">
+			<!-- Producto 1 -->
+			<div class="product-card">
+				<img src="../sources/categoria3/1.webp" alt="Cama Sublime" />
+				<div class="card-content">
+                    <h5>Chicharrón Señorial Barbacoa</h5>
+                    <p>Unidad...</p>
+                    <span class="tag">Patrocinado</span>
+                    <p class="price">Q9.50</h5>
+                    <button class="add-btn" onclick="carrito()">+ Agregar</button>
+				</div>
+			</div>
+			<!-- Producto 2 -->
+			<div class="product-card">
+				<img src="../sources/categoria3/2.webp" alt="Cama Sublime" />
+				<div class="card-content">
+                    <h5>Azúcar Morena los tulipanes</h5>
+                    <p>4 Libras...</p>
+                    <span class="tag">Normal</span>
+                    <p class="price">17.35</h5>
+                    <button class="add-btn" onclick="carrito()">+ Agregar</button>
+				</div>
+			</div>
+			<!-- Producto 3 -->
+			<div class="product-card">
+				<img src="../sources/categoria3/3.webp" alt="Cama Sublime" />
+				<div class="card-content">
+                    <h5>Azúcar Fortificada Blanca Caña Real</h5>
+                    <p>5.43 Libras...</p>
+                    <span class="tag">Normal</span>
+                    <p class="price">21.45</h5>
+                    <button class="add-btn" onclick="carrito()">+ Agregar</button>
+				</div>
+			</div>
+			<!-- Producto 4 -->
+			<div class="product-card">
+				<img src="../sources/categoria3/4.webp" alt="Cama Sublime" />
+				<div class="card-content">
+                    <h5>Maní japones marca Naú</h5>
+                    <p>300 Gramos...</p>
+                    <span class="tag">Patrocinado</span>
+                    <p class="price">Q20.00</h5>
+                    <button class="add-btn" onclick="carrito()">+ Agregar</button>
+				</div>
+			</div>
+			<!-- Producto 5 -->
+			<div class="product-card">
+				<img src="../sources/categoria3/5.webp" alt="Cama Sublime" />
+				<div class="card-content">
+                    <h5>Pasta larga Ina Espagueti</h5>
+                    <p>200 gramos...</p>
+                    <span class="tag">Normal</span>
+                    <p class="price">Q4.15</h5>
+                    <button class="add-btn" onclick="carrito()">+ Agregar</button>
+				</div>
+			</div>
+			<!-- Producto 6 -->
+			<div class="product-card">
+				<img src="../sources/categoria3/6.webp" alt="Cama Sublime" />
+				<div class="card-content">
+                    <h5>Frijoles Ducal molido negro</h5>
+                    <p>993 gramos...</p>
+                    <span class="tag">Normal</span>
+                    <p class="price">Q14.00</h5>
+                    <button class="add-btn" onclick="carrito()">+ Agregar</button>
+				</div>
+			</div>
+			<!-- Producto 7 -->
+			<div class="product-card">
+				<img src="../sources/categoria3/7.webp" alt="Cama Sublime" />
+				<div class="card-content">
+                    <h5>Quesifritos Señorial Snack</h5>
+                    <p>100 gramos...</p>
+                    <span class="tag">Patrocinado</span>
+                    <p class="price">Q6.55</h5>
+                    <button class="add-btn" onclick="carrito()">+ Agregar</button>
+				</div>
+			</div>
+			<!-- Producto 8 -->
+			<div class="product-card">
+				<img src="../sources/categoria3/8.webp" alt="Cama Sublime" />
+				<div class="card-content">
+                    <h5>Arroz gallo dorado precocido</h5>
+                    <p>400 gramos...</p>
+                    <span class="tag">Normal</span>
+                    <p class="price">Q7.80</h5>
+                    <button class="add-btn" onclick="carrito()">+ Agregar</button>
+				</div>
+			</div>
+		</main>
+		<br>
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer-content">
+				<div class="footer-section">
+					<h5>Acerca de</h5>
+					<p>Página creada como proyecto ...</p>
+				</div>
+				<div class="footer-section">
+					<h5>Enlaces</h5>
+					<ul>
+						<li><a href="#">Ofertas</a></li>
+						<li><a href="#">Envios</a></li>
+						<li><a href="#">Lo + nuevo</a></li>
+						<li><a href="#">Gift card</a></li>
+						<li><a href="#">Ayuda</a></li>
+					</ul>
+				</div>
+				<div class="footer-section">
+					<h5>Contacto</h5>
+					<ul>
+						<li><i class="bi bi-geo-alt-fill"></i> Guatemala, Guatemala</li>
+						<li><i class="bi bi-telephone-fill"></i> +502 6666-6666</li>
+						<li><i class="bi bi-envelope-fill"></i> info@emstore.com</li>
+					</ul>
+				</div>
+				<div class="footer-section">
+					<h5>Síguenos</h5>
+					<div class="social-icons">
+						<a href="#"><i class="bi bi-facebook"></i></a>
+						<a href="#"><i class="bi bi-twitter"></i></a>
+						<a href="#"><i class="bi bi-instagram"></i></a>
+						<a href="#"><i class="bi bi-linkedin"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				&copy; 2025 UMG. All rights reserved.
+			</div>
+		</footer>
+		<script src="../script/script.js"></script>
 	</body>
 </html>

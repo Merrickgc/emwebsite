@@ -1,95 +1,58 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="sources/icon.png">
-    <!-- Owl Carousel Framework -->
-    <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
-    <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
-    <!-- Bootstrap Framework -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emmanuel's Store</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="icon" href="sources/icon.png">
   </head>
   <body>
-    
-   <!-- Top Navbar -->
-    <nav class="navbar navbar-top py-2">
-      <div class="container d-flex justify-content-between align-items-center p-2">
-        <div class="d-flex align-items-center">
-          <img src="sources/supermarket_logo.avif" alt="sp" class="sp-logo me-2">
-        </div>
-        <div class="flex-grow-1 mx-3">
-          <input type="text" class="form-control search-bar px-4" placeholder="Buscar">
-        </div>
-        <div class="d-flex align-items-center gap-3">
-          <button class="icon-btn"><i class="bi bi-heart fs-5"></i></button>
-          <button class="icon-btn"><i class="bi bi-person fs-5"></i> <span class="text-white">Mi cuenta</span></button>
-          <button class="icon-btn"><i class="bi bi-cart fs-5"></i></button>
+    <!-- Top Navbar -->
+    <nav class="navbar-top">
+      <div class="navbar-container">
+        <a href="../index.html" class="logo-link">
+          <img src="../sources/supermarket_logo.avif" alt="sp" class="logo" />
+        </a>
+        <input type="text" class="search-bar" placeholder="Buscar" />
+        <div class="icon-group">
+          <button class="icon-btn"><i class="bi bi-heart"></i></button>
+          <a href="templates/perfil.html">
+            <button class="icon-btn"><i class="bi bi-person"></i><span>Mi cuenta</span></button>
+          </a>
+          <a href="templates/carrito.html">
+            <button class="icon-btn"><i class="bi bi-cart"></i></button>
+          </a>
         </div>
       </div>
     </nav>
-
     <!-- Bottom Navbar -->
-    <nav class="navbar navbar-bottom py-2">
-      <div class="container d-flex justify-content-between align-items-center">
-        <div class="d-flex gap-4">
-          <a href="#" class="text-white fw-semibold text-decoration-none">Ofertas</a>
-          <a href="#" class="text-white fw-semibold text-decoration-none">Envíos</a>
-          <a href="#" class="text-white fw-semibold text-decoration-none">Lo + nuevo</a>
-          <a href="#" class="text-white fw-semibold text-decoration-none">Gift card</a>
-          <a href="#" class="text-white fw-semibold text-decoration-none">Ayuda <i class="bi bi-chevron-down"></i></a>
-        </div>
-        <div class="d-flex gap-3 align-items-center">
-          <a href="https://www.amazon.com/?&tag=googleglobalp-20&ref=pd_sl_7nnedyywlk_e&adgrpid=159651196451&hvpone=&hvptwo=&hvadid=675114638367&hvpos=&hvnetw=g&hvrand=7450668258980448716&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9069801&hvtargid=kwd-10573980&hydadcr=2246_13468515" class="text-white fw-semibold text-decoration-none">Cotizador Amazon</a>
-        </div>
+    <nav class="navbar-bottom">
+      <div class="bottom-links">
+        <a href="templates/categoria1.html">Artículos para el Hogar</a>
+        <a href="templates/categoria2.html">Limpieza</a>
+        <a href="templates/categoria3.html">Abarrotes</a>
+        <a href="templates/categoria4.html">Higiene y Belleza</a>
       </div>
+      <a href="https://www.amazon.com" class="amazon-link">Cotizador Amazon</a>
     </nav>
-
     <br>
-    <!-- Carousel de Promociones -->
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="sources/anuncio1.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="sources/anuncio2.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="sources/anuncio3.jfif" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Imagen promocional -->
+     <div class="prom">
+      <img src="sources/anuncio1.png" class="" alt="...">
+     </div>
     <!-- Categorias -->
-    <div class="container">
-      <div class="row">
-        <div class="col text-center p-3">
+    <div class="contenedor">
+      <div class="separador">
+        <div class="division text-center-custom p-3-custom">
           <h3>Nuestras Categorias</h3>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col text-center">
+      <!-- Iconos de categoria -->
+      <div class="separador">
+        <div class="division text-center-custom" style="width: 90%;">
           <div class="owl-carousel">
             <!-- Categoria 1-->
             <div>
@@ -164,58 +127,50 @@
     </div>
 
     <br>
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-12 col-md-4">
-            <h5 class="footer-title">Acerca de</h5>
-            <p>
-              Página creada como proyecto ....
-            </p>
-          </div>
-          <div class="col-6 col-md-2">
-            <h5 class="footer-title">Enlaces</h5>
-            <ul class="list-unstyled">
-              <li><a href="#">Ofertas</a></li>
-              <li><a href="#">Envios</a></li>
-              <li><a href="#">Lo + nuevo</a></li>
-              <li><a href="#">Gift card</a></li>
-              <li><a href="#">Ayuda</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-3">
-            <h5 class="footer-title">Contacto</h5>
-            <ul class="list-unstyled">
-              <li><i class="bi bi-geo-alt-fill"></i> Guatemala, Guatemala</li>
-              <li><i class="bi bi-telephone-fill"></i> +502 6666-6666</li>
-              <li><i class="bi bi-envelope-fill"></i> info@emstore.com</li>
-            </ul>
-          </div>
-          <div class="col-12 col-md-3">
-            <h5 class="footer-title">Siguenos</h5>
-            <div class="social-icons">
-              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
+     <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h5>Acerca de</h5>
+          <p>Página creada como proyecto ...</p>
         </div>
-        <div class="footer-bottom mt-4">
-          &copy; 2025 UMG. All rights reserved.
+        <div class="footer-section">
+          <h5>Enlaces</h5>
+          <ul>
+            <li><a href="templates/categoriaprueba.html">Ofertas</a></li>
+            <li><a href="#">Envios</a></li>
+            <li><a href="#">Lo + nuevo</a></li>
+            <li><a href="#">Gift card</a></li>
+            <li><a href="#">Ayuda</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h5>Contacto</h5>
+          <ul>
+            <li><i class="bi bi-geo-alt-fill"></i> Guatemala, Guatemala</li>
+            <li><i class="bi bi-telephone-fill"></i> +502 6666-6666</li>
+            <li><i class="bi bi-envelope-fill"></i> info@emstore.com</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h5>Síguenos</h5>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
         </div>
       </div>
+      <div class="footer-bottom">
+        &copy; 2025 UMG. All rights reserved.
+      </div>
     </footer>
-
-
-
 
     <!-- JQuery Framework -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Owl Carousel JS Framework -->
     <script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.js"></script>
     <script src="script/script.js"></script>
   </body>
 </html>

@@ -1,35 +1,11 @@
-/*Color barra superior*/
-.navbar-top {
-    background-color: #5409DA;
-}
-/*Color barra secundaria*/
-.navbar-bottom {
-    background-color: #4E71FF;
-}
-/*Borde de la barra de busqueda*/
-.search-bar {
-    border-radius: 1rem;
-}
-/*Propiedades de icono de carrito*/
-.icon-btn {
-    background: none;
-    border: none;
-    color: white;
-}
-/*Tamaño del logo*/
-.sp-logo {
-    height: 40px;
-}
-
 /* Propiedades de categoria iconos */
-
 .category-item {
     width: 100px;
     text-align: center;
     margin: 0 10px;
     flex-shrink: 0;
 }
-
+/* Estilos por icono en las categorias*/
 .category-icon {
     width: 60px;
     height: 60px;
@@ -41,7 +17,7 @@
     justify-content: center;
     margin: 0 auto 10px auto;
 }
-
+/*tamaño icono de categoria*/
 .category-icon img {
     max-width: 30px;
     max-height: 30px;
@@ -55,41 +31,468 @@
 a {
     text-decoration: none;
 }
-/* Footer o pie de pagina */
-footer {
-    background-color: #5409DA;
-    color: #e9ecef;
-    padding: 3rem 1rem 1rem;
+
+/* Propiedades generales*/
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-footer a {
-    color: #adb5bd;
-    text-decoration: none;
-    transition: color 0.3s ease;
+/* Divisiones por filas */
+.separador {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
 }
-footer a:hover {
-    color: #ffffff;
-    text-decoration: underline;
+.division {
+  flex: 1;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
-.footer-title {
-    font-weight: 700;
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-    color: #f8f9fa;
+
+.py-2-custom {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
-.social-icons a {
-    font-size: 1.4rem;
-    margin-right: 1rem;
-    color: #adb5bd;
-    transition: color 0.3s ease;
+
+.p-2-custom {
+  padding: 1%;
 }
-.social-icons a:hover {
-    color: #0d6efd;
+
+.p-3-custom {
+  padding: 1rem;
 }
-.footer-bottom {
-    border-top: 1px solid #2c2c2c;
-    margin-top: 2rem;
-    padding-top: 1rem;
-    font-size: 0.9rem;
-    color: #868e96;
+
+.mx-3-custom {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.me-2-custom {
+  margin-right: 0.5rem;
+}
+
+.gap-custom {
+  gap: 0.75rem;
+}
+
+.text-center-custom {
+  text-align: center;
+}
+
+.text-white-custom {
+  color: white;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.fs-5-custom {
+  font-size: 1.25rem;
+}
+
+.gy-custom > * {
+  margin-bottom: 1rem;
+}
+
+.mt-custom {
+  margin-top: 1rem;
+}
+
+.prom{
+  text-align: center;
+}
+
+/* Propiedades de categoria iconos */
+.category-item {
+    width: 100px;
     text-align: center;
+    margin: 0 10px;
+    flex-shrink: 0;
+}
+/* Estilos por icono en las categorias*/
+.category-icon {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px auto;
+}
+/*tamaño icono de categoria*/
+.category-icon img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.category-text {
+    font-size: 0.875rem;
+    color: #333;
+}
+/* Quita la linea del enlace*/
+a {
+    text-decoration: none;
+}
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* Navbar superior */
+.navbar-top {
+  background-color: #1e1e2f;
+  padding: 1rem;
+  color: white;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  height: 40px;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+}
+
+.icon-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.icon-btn span {
+  margin-left: 0.3rem;
+}
+
+/* Navbar inferior */
+.navbar-bottom {
+  background-color: #343a40;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  flex-wrap: wrap;
+}
+
+.bottom-links a,
+.amazon-link {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* Título */
+.header {
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+/* Grid de productos */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h5 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.tag {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+/* Botón agregar */
+.add-btn {
+  padding: 0.5rem 1rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.add-btn:hover {
+  background-color: #005fa3;
+}
+
+/* Footer */
+.footer {
+  background-color: #1e1e2f;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section h5 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: white;
+}
+
+.social-icons a {
+  margin-right: 0.5rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+}
+/* Carrito */
+
+/*Caja principal del carrito*/
+.shopping-cart {
+  width: 750px;
+  height: 423px;
+  margin: 80px auto;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+ 
+  display: flex;
+  flex-direction: column;
+}
+/*Caja de Titulo*/
+.title {
+  height: 60px;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 20px 30px;
+  color: #5E6977;
+  font-size: 18px;
+  font-weight: 400;
+}
+/*Espaciado entre items*/
+.item {
+  padding: 20px 30px;
+  height: 120px;
+  display: flex;
+}
+/*Borde entre elementos*/
+.item:nth-child(3) {
+  border-top:  1px solid #E1E8EE;
+  border-bottom:  1px solid #E1E8EE;
+}
+.buttons {
+  position: relative;
+  padding-top: 30px;
+  margin-right: 60px;
+}
+.delete-btn,
+.like-btn {
+  display: inline-block;
+  Cursor: pointer;
+}
+.delete-btn {
+  width: 18px;
+  height: 17px;
+  background: url(&amp;amp;quot;delete-icn.svg&amp;amp;quot;) no-repeat center;
+}
+ 
+.like-btn {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  background: url('twitter-heart.png');
+  width: 60px;
+  height: 60px;
+  background-size: 2900%;
+  background-repeat: no-repeat;
+}
+
+/*Propiedades de la imagen en carrito*/
+.image {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+}
+/*Propiedades de texto en descripción de carrito de compras*/
+.description {
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 115px;
+}
+ 
+.description span {
+  display: block;
+  font-size: 14px;
+  color: #43484D;
+  font-weight: 400;
+}
+ 
+.description span:first-child {
+  margin-bottom: 5px;
+}
+.description span:last-child {
+  font-weight: 300;
+  margin-top: 8px;
+  color: #86939E;
+}
+/*Entrada de cantidad de producto*/
+.quantity {
+  padding-top: 20px;
+  margin-right: 60px;
+}
+/*Apariencia de la cantidad de producto*/
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+/*Estilos para botones de + y - */
+.plus-btn, .minus-btn{
+  width: 30px;
+  height: 30px;
+  background-color: #E1E8EE;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+/* Propiedades del precio de los elementos en carrito*/
+.total-price {
+  width: 83px;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+/*Propiedades del texto del total a pagar*/
+.subtotal {
+  background-color: #FFFFFF;
+  padding: 2%;
+  border-top: 1px solid #E1E8EE;
+  text-align: right;
+  font-weight: bolder;
+  padding-right: 4em;
+}
+/*Estilos del perfil*/
+.principal {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+/*Centrado de la foto de perfil*/
+.fotoc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*Propiedades de la foto*/
+.foto {
+  width: 15em;
+  border-radius: 50%;
+}
+
+.centrado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about {
+  background-color: #FFFFFF;
+  padding: 2%;
+  width: 50%;
+  border-radius: 5px;
 }
